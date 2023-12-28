@@ -1,5 +1,7 @@
 ---
+import '../styles/global.css';
 
+const pageTitle = "四方木のBlog";
 ---
 
 <html lang="en">
@@ -8,16 +10,21 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
         <a href="/">ホーム</a>
         <a href="/about/">概要</a>
         <a href="/blog/">ブログ</a>
         
-        <h1>私のブログ</h1>      
+        <h1>{pageTitle}</h1>      
         <p>チュートリアルのブログ作成中。</p>
       
         <p>このサイトはチュートリアルを進めるにつれて更新されていきます。定期的にチェックして、私の旅の様子を見に来てください！</p>
+        <ul>
+            <li><a href="/posts/post-1/">記事1</a></li>
+            <li><a href="/posts/post-2/">記事2</a></li>
+            <li><a href="/posts/post-3/">記事3</a></li>
+        </ul>
 	</body>
 </html>
